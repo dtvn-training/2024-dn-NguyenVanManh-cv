@@ -3,8 +3,12 @@ if (localStorage.getItem('view_cv') === null) {
     localStorage.setItem('view_cv', '1');
 } else {
     let viewCount = parseInt(localStorage.getItem('view_cv')) + 1;
+    if (viewCount < 100) {
+        viewCount = 100;
+    }
     localStorage.setItem('view_cv', viewCount.toString());
 }
+
 let currentViewCount = localStorage.getItem('view_cv');
 document.getElementById('number_view').textContent = currentViewCount;
 
