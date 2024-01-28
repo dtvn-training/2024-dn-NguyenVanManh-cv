@@ -23,10 +23,10 @@ ScrollReveal().reveal('#nav-menu li ', { delay: 500, origin: 'bottom', interval:
 ScrollReveal().reveal('#about div' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
 ScrollReveal().reveal('#inner-about p , #additional > p , #additional li ' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
 ScrollReveal().reveal('#introduction' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
-ScrollReveal().reveal('#infor-detail li' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
+ScrollReveal().reveal('#infor-detail li p' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
 ScrollReveal().reveal('#contact , #contact-detail li' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
 ScrollReveal().reveal('#objective' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
 ScrollReveal().reveal('#education' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
-ScrollReveal().reveal('#work , #work-detail li' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
+ScrollReveal().reveal('#work , #work-detail li p' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
 ScrollReveal().reveal('#skills , #skills ul li' , { delay: 500, origin: 'bottom', interval: 200, distance: '300px' });
     
