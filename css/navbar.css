@@ -1,12 +1,12 @@
 #navbar {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px 15px;
     z-index: auto;
 }
 
 #logo {
-    width: 30%;
+    width: 15%;
 }
 
 #logo img {
@@ -14,7 +14,7 @@
 }
 
 #nav-menu {
-    width: 70%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,12 +23,81 @@
 }
 
 #nav-menu li a {
-    color: black;
+    color: #004996;
     padding: 6px;
     border-radius: 16px;
+    transition: all 0.5s ease;
+}
+
+#nav-menu li a i {
+    transition: all 0.5s ease;
 }
 
 #nav-menu li a:hover {
     text-decoration: none;
     color: #007bff;
-} 
+    transition: all 0.5s ease;
+}
+
+#nav-menu li a:not(.not-hover):hover i {
+    color: #007bff;
+    transition: all 0.5s ease;
+}
+
+
+/* hover navar */
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+    text-decoration: none;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #007bff;
+    border-right: 3px solid #007bff;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #007bff;
+    border-left: 3px solid #007bff;
+    transform: translate(100%, -50%)
+}
+
+.nav a:not(.not-hover):hover:before,
+.nav a:not(.not-hover):hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:not(.not-hover):hover {
+    color: #007bff;
+}

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="with=device-width, initial-scale=1">
-    <link rel="SHORCUT ICON" type="text/css" href="logo.png">
+    <link rel="SHORCUT ICON" type="text/css" href="img/logo.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./app.css">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/vendor.css"> 
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -30,41 +31,335 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="btnScrollToTop" data-scroll="up" ><i class="fa-solid fa-circle-chevron-up"></i></div>
     <header id="navbar">
         <div id="logo">
             <a href="#"><img src="logo.png" alt="Nguyễn Văn Manh"></a>
         </div>
-        <div id="nav-menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Passions</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#"><button type="button" class="btn btn-primary"><i class="fa-solid fa-square-phone-flip"></i>
+        <div id="nav-menu" class="nav">
+            <li><a href="#about"><i class="fa-solid fa-signature"></i> About</a></li>
+            <li><a href="#infor"><i class="fa-solid fa-user-check"></i> Infor</a></li>
+            <li><a href="#objective"><i class="fa-solid fa-check-double"></i> Objective</a></li>
+            <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#work"><i class="fa-solid fa-building-circle-check"></i> Work Experience</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+            <li><a href="#"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i> Interests</a></li>
+            <li><a href="#"><i class="fa-solid fa-image"></i> Other</a></li>
+            <li><a class="not-hover" href="#"><button type="button" class="btn btn-primary"><i class="fa-solid fa-square-phone-flip"></i>
                         Contact Me</button></a></li>
         </div>
     </header>
-    <div class="row" id="about">
-        <div id="about-text" class="col-6">
+    <div id="about">
+        <div id="about-text">
             <div id="inner-about">
                 <p>Hi !</p>
-                <p>I’m Muhamad Raul. <br> a Front-End Developer</p>
-                <p>Front-End devel oper based in Bekasi, Indonesian <br>
-                    I’am coding with a clean and beautiful problem <br>
-                    solving in mind.</p>
+                <p>I’m Nguyen Van Manh. <br>
+                    a Full Stack Developer
+                    </p>
+                <p>This is a detailed introduction page about my personal information and all the professional skills that I have accumulated over my time working in the field of software development. With a diverse understanding of both Front-end and Back-end, I am proud to be considered a Full Stack Developer capable of taking on and implementing complex projects.</p>
             </div>
         </div>
-        <div id="about-img" class="col-6">
-            <img src="img/coder.png" alt="Coder">   
+        <div id="about-img" >
+            <img src="img/Programmer-rafiki.png" alt="Coder">   
         </div>
     </div>
+    <div id="additional">
+        <p><span>Additional</span> <span>passions</span></p>
+        <ul>
+            <li>
+                <div><img src="/img/Developer activity-amico.png" alt="Front-End Developer"></div>
+                <p>
+                    <span><strong>Front-End</strong>Developer</span><br>
+                    <span>(Bootstrap, Jquery, VueJs, ReactJS)</span>
+                </p>
+            </li>
+            <li>
+                <div><img src="img/Server-amico.png" alt="Back-End Developer"></div>
+                <p>
+                    <span><strong>Back-End </strong>Developer</span><br>
+                    <span>(PHP, Laravel, Python, Django)</span>
+                </p>
+            </li>
+            <li>
+                <div><img src="img/devops.jpg" alt="DevOps"></div>
+                <p>
+                    <span><strong>DevOps</strong></span><br>
+                    <span>(Docker, Microsoft azure, Google cloud)</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="infor">
+        <p class="infor-title"><span>My</span> <span>Information</span></p>
+        <p id="introduction">
+            <span>INTRODUCTION</span> 
+            <span><i class="fa-solid fa-circle"></i></span>
+            <span>I started fullstack programming course from October 2020 and completed the course in August 2021. Then I did real projects to gain more experience.
+                By knowledge of both FrontEnd, BackEnd and Database. In real projects, I am usually the team leader, so I have experience in teamwork and division of work between members.
+            </span>
+        </p>
+        <div id="basic-infor">
+            <p id="basic-infor-title">Basic information</p>
+            <ul id="infor-detail">
+                <li>
+                    <p>Date of birth</p>
+                    <p><i class="fa-solid fa-circle"></i></p>
+                    <p>August 29, 2001</p>
+                </li>
+                <li>
+                    <p>Gender</p>
+                    <p><i class="fa-solid fa-circle"></i></p>
+                    <p>Male</p>
+                </li>
+                <li>
+                    <p>Location</p>
+                    <p><i class="fa-solid fa-circle"></i></p>
+                    <p>Da Nang, Viet Nam</p>
+                </li>
+            </ul>
+        </div>
+        <p class="p-hr"></p>
+        <div id="contact">
+            <p id="contact-title">Contact Me</p>
+            <div id="contact-detail">
+                <li class="github">
+                    <div>
+                        <p><i class="fa-brands fa-github"></i></p>
+                        <p><a target="_blank" href="https://github.com/NguyenVanManh-AI">NguyenVanManh-AI</a></p>
+                    </div>
+                </li>
+                <li class="instagram">
+                    <div>
+                        <p><i class="fa-brands fa-square-instagram"></i></p>
+                        <p><a target="_blank" href="https://www.instagram.com/vanmanh.ai">vanmanh.ai</a></p>
+                    </div>
+                </li>
+                <li class="mail">
+                    <div>
+                        <p><i class="fa-solid fa-envelope"></i></p>
+                        <p><a target="_blank" href="mailto:nguyenvanmanh2001it1@gmail.com">nguyenvanmanh2001it1@gmail.com</a></p>
+                    </div>
+                </li>
+                <li class="phone">
+                    <div>
+                        <p><i class="fa-solid fa-phone-volume"></i></p>
+                        <p><a target="_blank" href="tel:+0971404372">0971404372</a></p>
+                    </div>
+                </li>
+                <li class="facebook">
+                    <div>
+                        <p><i class="fa-brands fa-facebook"></i></p>
+                        <p><a target="_blank" href="https://www.facebook.com/IcassNiuTon">IcassNiuTon</a></p>
+                    </div>
+                </li>
+                <li class="linkedin">
+                    <div>
+                        <p><i class="fa-brands fa-linkedin"></i></p>
+                        <p><a target="_blank" href="https://www.linkedin.com/in/nvmanhfullstack/">nvmanhfullstack</a></p>
+                    </div>
+                </li>
+                <li class="twitter">
+                    <div>
+                        <p><i class="fa-brands fa-twitter"></i></p>
+                        <p><a target="_blank" href="https://twitter.com/NguyenVanManhft">NguyenVanManhft</a></p>
+                    </div>
+                </li>
+                <li class="youtube">
+                    <div>
+                        <p><i class="fa-brands fa-youtube"></i></p>
+                        <p><a target="_blank" href="https://www.youtube.com/">HiVanManh</a></p>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <p class="p-hr"></p>
+        <div id="objective">
+            <p class="objective-title"><span>My</span> <span>Objective</span></p>
+            <p><i class="fa-solid fa-bullseye"></i> Constantly learning new knowledge. Improve professional skills and thinking ability. Contribute my value to the company.</p>
+        </div>
+        <p class="p-hr"></p>
+        <div id="education">
+            <p class="education-title"><span>My</span> <span>Education</span></p>
+            <div>
+                <p><img src="img/bkdn-uni.png" alt="Da Nang University of Science and Technology"></p>
+                <p>
+                    <span><i class="fa-solid fa-school-flag"></i> Da Nang University of Science and Technology</span><br>
+                    <span class="education-detail">I started studying software engineering in the information technology department of Da Nang University of Science and Technology in 2020.</span>
+                </p>
+            </div>
+        </div>
+        <div id="work">
+            <p>Work Experience</p>
+            <ul id="work-detail">
+                <li>
+                    <p>Jan 2024 - Currently</p>
+                    <p><i class="fa-solid fa-circle"></i></p>
+                    <p>
+                        <span>FullStack Developer Intern - DAC Data Technology Vietnam JSC</span>
+                        <br>
+                        <span>Are learning from experience...</span>
+                    </p>
+                </li>
+                <li>
+                    <p>Aug 2023 - Nov 2023</p>
+                    <p><i class="fa-solid fa-circle"></i></p>
+                    <p>
+                        <span>FullStack Developer Intern - BAP  Software Company</span>
+                        <br>
+                        <span>Elister Health Care: This is a project about a system for finding doctors, scheduling consultations and services. The system includes 4 parties including general administrator, hospital manager, doctors and users. This project uses PHP Laravel9 as BackEnd API, ReactJS as FrontEnd. Also use Docker and Deploy Microsoft Azure .                                                        
+                            Demo: <a target="_blank" href="https://react-vercel-95yac2b5v-vanmanh-react.vercel.app">https://react-vercel-95yac2b5v-vanmanh-react.vercel.app</a><br>
+                            API: <a target="_blank" href="https://vanmanh.azurewebsites.net">https://vanmanh.azurewebsites.net</a></span>
+                    </p>
+                </li>
+                <li>
+                    <p>Jan 2023 - Apr 2023</p>
+                    <p><i class="fa-solid fa-circle"></i></p>
+                    <p>
+                        <span>FullStack Developer Intern - IZI  Software Company</span>
+                        <br>
+                        <span> Nhadat Express: This is project on real estate trading in general, the project includes both web systems for users and admins to manage. The project uses the PHP - Laravel8 framework. My job is to fix bugs as well as do tasks and develop features for both users and admins.                                                          
+                            Demo: <a target="_blank" href="http://nhadatexpress.toolgencode.com">http://nhadatexpress.toolgencode.com</a></span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="skills">
+            <p id="skills-title">The skills and technology I use</p>
+            <ul>
+                <li>
+                    <p><img src="/img/tech/html.png" alt="html.png"></p>
+                    <p>HTML5</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/css.png" alt="Skill"></p>
+                    <p>CSS3</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/sass.png" alt="Skill"></p>
+                    <p>Sass</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/js.png" alt="Skill"></p>
+                    <p>Javascript</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/bootstrap.png" alt="Skill"></p>
+                    <p>Bootstrap5</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/jquery.png" alt="Skill"></p>
+                    <p>Jquery</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/vue.png" alt="Skill"></p>
+                    <p>VueJs3</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/react.png" alt="Skill"></p>
+                    <p>ReactJs</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/npm.png" alt="Skill"></p>
+                    <p>NPM</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/nodejs.png" alt="Skill"></p>
+                    <p>Nodejs</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/mysql.png" alt="Skill"></p>
+                    <p>MySQL</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/php.png" alt="Skill"></p>
+                    <p>PHP</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/laravel.png" alt="Skill"></p>
+                    <p>Laravel</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/composer.png" alt="Skill"></p>
+                    <p>Composer</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/postman.png" alt="Skill"></p>
+                    <p>Postman</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/git.png" alt="Skill"></p>
+                    <p>Git</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/github.png" alt="Skill"></p>
+                    <p>Github</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/gitlab.png" alt="Skill"></p>
+                    <p>Gitlab</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/docker.png" alt="Skill"></p>
+                    <p>Docker</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/azure.png" alt="Skill"></p>
+                    <p>Micro Azure</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/google-cloud.png" alt="Skill"></p>
+                    <p>Gg cloud</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/webpack.png" alt="Skill"></p>
+                    <p>Webpack</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/firebase.png" alt="Skill"></p>
+                    <p>Firebase</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/python.png" alt="Skill"></p>
+                    <p>Python</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/django.png" alt="Skill"></p>
+                    <p>Django</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/anaconda.png" alt="Skill"></p>
+                    <p>Anaconda</p>
+                </li>
+                <li>
+                    <p><img src="/img/tech/vscode.png" alt="Skill"></p>
+                    <p>VS Code</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     
+    
+
+
     <footer class="wrap-outer">
 
     </footer>
     </div>
     <script src="app.js" type="text/javascript"></script>
+
+
+    
+
 </body>
 
 </html>

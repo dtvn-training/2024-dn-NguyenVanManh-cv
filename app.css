@@ -16,9 +16,27 @@ li {
 }
 
 body {
-    padding: 30px 80px;
-    background-image: url('img/background.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
+	padding: 30px 60px;
+	padding-bottom: 0px;
+	background-image: url('img/background.png');
+	background-repeat: repeat;
+	background-size: contain; 
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+.btnScrollToTop {
+	border-radius: 200px;
+	color: #007bff;
+	cursor: pointer;
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	width: fit-content;
+	border: none;
+	z-index: 99;
+	display: none;
+	font-size: 30px;
+}
