@@ -1,6 +1,6 @@
 // view cv 
 if (localStorage.getItem('view_cv') === null) {
-    localStorage.setItem('view_cv', '1');
+    localStorage.setItem('view_cv', '100');
 } else {
     let viewCount = parseInt(localStorage.getItem('view_cv')) + 1;
     if (viewCount < 100) {
