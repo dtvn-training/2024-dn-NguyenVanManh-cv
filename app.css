@@ -40,3 +40,32 @@ html {
 	display: none;
 	font-size: 30px;
 }
+
+
+#number_view2 {
+	width: 40px;
+	height: 40px;
+	background-color: #007bff;
+	border-radius: 200px;
+	color: white;
+	cursor: pointer;
+	position: fixed;
+	left: 15px;
+	bottom: 30px;
+	border: none;
+	z-index: 99;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#number_view2::after {
+	position: absolute;
+	content: 'View CV';
+	top: 40px;
+	color: #007bff;
+	font-size: 15px;
+	text-align: center;
+	width: 60px;
+}

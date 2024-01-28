@@ -466,3 +466,17 @@ margin-top: 20px;
 #other div li:hover img {
     transform: scale(1.2); 
 }
+
+footer {
+    margin-top: 30px;
+}
+
+footer p {
+    margin: auto;
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    color:#002265;
+    font-family: 'Poppins', sans-serif;
+}
