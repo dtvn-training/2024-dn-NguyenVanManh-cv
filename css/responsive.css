@@ -9,10 +9,10 @@
     }
 
     #additional ul li {
-        width: 30%;
+        /* width: 30%; */
     }
     #additional {
-        font-size: 14px;
+        /* font-size: 14px; */
     }
 
     #contact-detail a {
@@ -27,6 +27,13 @@
     }
     #education > div > p:nth-child(1) img {
         max-width: 66%;
+    }
+
+    #additional ul li > div {
+        height: 75%;
+    }
+    #additional ul p {
+        height: 25%;
     }
 }
 
@@ -177,9 +184,7 @@
         top: 30px;
         font-size: 12px;
     }
-    /* * {
-        display: none;
-    } */
+
 }
 
 /* Tablets */
@@ -319,9 +324,7 @@
     #infor-detail li p:nth-child(2) {
         width: 4%;
     }
-    /* * {
-        display: none;
-    } */
+
 }
 
 /* Mobile Phones */
