@@ -17,7 +17,7 @@ li {
 
 body {
 	padding: 30px 60px;
-	padding-bottom: 0px;
+	padding-bottom: 0px; 
 	background-image: url('img/background.png');
 	background-repeat: repeat;
 	background-size: contain; 
