@@ -15,8 +15,11 @@
         /* font-size: 14px; */
     }
 
-    #contact-detail a {
-        font-size: 12px;
+    #contact-detail li p:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
     }
 
     #education > div > p:nth-child(1) {
@@ -58,8 +61,11 @@
         padding: 0px 100px;
     }
 
-    #contact-detail a {
-        font-size: 12px;
+    #contact-detail li p:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
     }
 
     #contact-detail {
@@ -136,6 +142,7 @@
         text-overflow: ellipsis;
         margin-bottom: 10px;
     }
+
     #contact-detail a {
         font-size: 12px;
     }
