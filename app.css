@@ -37,8 +37,10 @@ html {
 	width: fit-content;
 	border: none;
 	z-index: 99;
-	display: none;
+	/* display: none; */
+	opacity: 0;
 	font-size: 30px;
+	transition: all 0.5s ease;
 }
 
 
