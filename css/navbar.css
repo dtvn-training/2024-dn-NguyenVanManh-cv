@@ -16,6 +16,7 @@
 #nav-menu {
     width: 85%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;

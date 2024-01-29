@@ -1,0 +1,477 @@
+/* Extra Large Laptops and Desktops */
+@media screen and (min-width: 1201px) {
+    #nav-menu {
+        /* width: 50%; */
+        /* justify-content: center; */
+    }
+    #nav-menu > li {
+        margin-bottom: 10px;
+    }
+
+    #additional ul li {
+        width: 30%;
+    }
+    #additional {
+        font-size: 14px;
+    }
+
+    #contact-detail a {
+        font-size: 12px;
+    }
+
+    #education > div > p:nth-child(1) {
+        width: 12%;
+    }
+    #education > div > p:nth-child(2) {
+        padding-right: 60px;
+    }
+    #education > div > p:nth-child(1) img {
+        max-width: 66%;
+    }
+}
+
+/* Large Laptops and Desktops */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    #nav-menu {
+        width: 60%;
+        justify-content: center;
+    }
+    #nav-menu > li {
+        margin-bottom: 10px;
+    }
+    #additional ul li {
+        width: 30%;
+    }
+    #additional {
+        margin: 0px 20px;
+        font-size: 14px;
+    }
+
+    #introduction {
+        padding: 0px 100px;
+    }
+
+    #contact-detail a {
+        font-size: 12px;
+    }
+
+    #contact-detail {
+        justify-content: center;
+    }
+    #contact-detail li {
+        width: 33%;
+    }
+
+    #education > div > p:nth-child(1) {
+        width: 8%;
+    }
+    #education > div > p:nth-child(2) {
+        padding-right: 40px;
+    }
+    #education > div > p:nth-child(1) img {
+        max-width: -webkit-fill-available;
+    }
+
+    #work-detail li p:nth-child(1) {
+        width: 20%;
+    }
+    #work-detail li p:nth-child(3) {
+        width: 76%;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+}
+
+/* Small Laptops and Desktops */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #nav-menu {
+        width: 60%;
+        justify-content: center;
+    }
+    #nav-menu > li {
+        margin-bottom: 10px;
+    }
+    #about-text p:nth-child(2) {
+        font-size: 35px;
+    }
+    #about-img img {
+        max-width: 92%;
+    }
+    #additional ul li > div {
+        height: 70%;
+    }
+
+    #additional ul li {
+        width: 30%;
+    }
+    #additional {
+        margin: 0px 20px;
+        font-size: 14px;
+    }
+
+    #introduction {
+        padding: 0px 0px;
+    }
+
+    #contact-detail li p:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+    }
+    #contact-detail a {
+        font-size: 12px;
+    }
+
+    #contact-detail {
+        justify-content: center;
+    }
+    #contact-detail li {
+        width: 33%;
+    }
+
+    #objective p:nth-child(2) {
+        font-size: 17px;
+    }
+
+    #education > div > p:nth-child(1) {
+        width: 8%;
+    }
+    #education > div > p:nth-child(2) {
+        padding-right: 0px;
+        width: 73%;
+    }
+    #education > div > p:nth-child(1) img {
+        max-width: -webkit-fill-available;
+    }
+
+    #work-detail li p:nth-child(1) {
+        width: 26%;
+    }
+    #work-detail li p:nth-child(2) {
+        width: 4%;
+    }
+    #work-detail li p:nth-child(3) {
+        width: 70%;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+
+    #skills ul li {
+        width: 18%;
+    }
+    #other div {
+        padding: 0px 100px;
+    }
+
+    #number_view2 {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    #number_view2::after {
+        top: 30px;
+        font-size: 12px;
+    }
+    /* * {
+        display: none;
+    } */
+}
+
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    #nav-menu {
+        width: 60%;
+        justify-content: center;
+    }
+    #nav-menu > li {
+        margin-bottom: 10px;
+    }
+    #about-text p:nth-child(2) {
+        font-size: 29px;
+    }
+    #about-text p:nth-child(3) {
+        font-size: 16px;
+    }
+    #about-img img {
+        max-width: 92%;
+    }
+    #additional ul li > div {
+        height: 70%;
+    }
+
+    #additional ul li {
+        width: 30%;
+    }
+    #additional {
+        margin: 0px 20px;
+        font-size: 14px;
+    }
+
+    #introduction {
+        padding: 0px 0px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    #contact-detail li p:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+    }
+    #contact-detail a {
+        font-size: 12px;
+    }
+
+    #contact-detail {
+        justify-content: center;
+    }
+    #contact-detail li {
+        width: 33%;
+    }
+
+    #objective p:nth-child(2) {
+        font-size: 17px;
+        width: 70%;
+        font-size: 14px;
+    }
+
+    #education > div > p:nth-child(1) {
+        width: 8%;
+    }
+    #education > div > p:nth-child(2) {
+        padding-right: 0px;
+        width: 73%;
+    }
+    #education > div > p:nth-child(2) span:nth-child(1) {
+        font-size: 14px;
+    }
+    .education-detail {
+        font-size: 14px;
+    }
+    #education > div > p:nth-child(1) img {
+        max-width: -webkit-fill-available;
+    }
+
+    #work-detail li p:nth-child(1) {
+        width: 26%;
+        font-size: 12px;
+    }
+    #work-detail li p:nth-child(2) {
+        width: 4%;
+        padding-top: 4px;
+    }
+    #work-detail li p:nth-child(3) {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+
+    #skills ul li {
+        width: 18%;
+        font-size: 10px;
+    }
+    #other div {
+        padding: 0px 100px;
+    }
+
+    #number_view2 {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    #number_view2::after {
+        top: 30px;
+        font-size: 12px;
+    }
+    #interests p:nth-child(2) {
+        font-size: 14px;
+    }
+    #other div {
+        padding: 0px 30px;
+    }
+    #other div li img {
+        width: 60px;
+        height: 60px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+
+    #infor-detail li {
+        font-size: 14px;
+    }
+    #infor-detail li p:nth-child(2) {
+        width: 4%;
+    }
+    /* * {
+        display: none;
+    } */
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 576px) {
+    #nav-menu {
+        font-size: 12px;
+    }
+    body {
+        padding: 30px 20px;
+    }
+    #navbar {
+        padding: 0px;
+    }
+    #nav-menu {
+        width: 50%;
+        justify-content: center;
+    }
+    #nav-menu > li {
+        margin-bottom: 10px;
+    }
+    #about-text p:nth-child(2) {
+        font-size: 20px;
+    }
+    #about-text p:nth-child(3) {
+        font-size: 14px;
+    }
+    #about-img img {
+        max-width: 92%;
+    }
+    #additional ul li > div {
+        height: 48%;
+    }
+    .btn {
+        padding: 6px 10px;
+        height: 30px;
+    }
+    #logo img {
+        max-width: 100px;
+    }
+
+    #additional ul li {
+        width: 30%;
+    }
+    #additional {
+        margin: 0px 20px;
+        font-size: 14px;
+    }
+
+    #introduction {
+        padding: 0px 0px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    #contact-detail li p:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+    }
+    #contact-detail a {
+        font-size: 12px;
+    }
+
+    #contact-detail {
+        justify-content: center;
+    }
+    #contact-detail li {
+        width: 33%;
+    }
+
+    #objective p:nth-child(2) {
+        font-size: 17px;
+        width: 70%;
+        font-size: 14px;
+    }
+
+    #education > div > p:nth-child(1) {
+        width: 8%;
+    }
+    #education > div > p:nth-child(2) {
+        padding-right: 0px;
+        width: 73%;
+    }
+    #education > div > p:nth-child(2) span:nth-child(1) {
+        font-size: 14px;
+    }
+    .education-detail {
+        font-size: 14px;
+    }
+    #education > div > p:nth-child(1) img {
+        max-width: -webkit-fill-available;
+    }
+
+    #work-detail li p:nth-child(1) {
+        width: 26%;
+        font-size: 12px;
+    }
+    #work-detail li p:nth-child(2) {
+        width: 4%;
+        padding-top: 4px;
+    }
+    #work-detail li p:nth-child(3) {
+        width: 70%;
+        font-size: 12px;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+
+    #skills ul li {
+        width: 24%;
+        font-size: 9px;
+    }
+    #other div {
+        padding: 0px 100px;
+    }
+
+    #number_view2 {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    #number_view2::after {
+        top: 30px;
+        font-size: 12px;
+    }
+    #interests p:nth-child(2) {
+        font-size: 14px;
+    }
+    #other div {
+        padding: 0px 30px;
+    }
+    #other div li img {
+        width: 60px;
+        height: 60px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+
+    #infor-detail li {
+        font-size: 14px;
+    }
+    #infor-detail li p:nth-child(2) {
+        width: 4%;
+    }
+
+}

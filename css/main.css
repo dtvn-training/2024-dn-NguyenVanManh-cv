@@ -299,6 +299,7 @@
 #education > div {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #education > div > p:nth-child(1) {
@@ -328,14 +329,6 @@
 /* work */
 #work {
 margin-top: 20px;
-}
-
-#work > p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    color: #14279B;
 }
 
 #work-detail {
@@ -380,15 +373,6 @@ margin-top: 20px;
     margin-top: 20px;
 }
 
-#skills-title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    color: #14279B;
-    margin-bottom: 30px;
-} 
-
 #skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -398,8 +382,7 @@ margin-top: 20px;
 #skills ul li {
     margin: 0px 6px;
     margin-bottom: 10px;
-    width: 6%;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    width: 10%;
     border-radius: 6px;
     padding: 6px;
     text-align: center;
@@ -407,6 +390,23 @@ margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     color: #14279B;
     font-size: 12px;
+    cursor: pointer;
+    height: 109px;
+}
+
+#skills ul li div {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    width: 95%;
+    height: 95%;
+    transition: all 0.5s ease;
+}
+
+#skills ul li div:hover {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
 }
 
 #skills ul li p:nth-child(1) {
