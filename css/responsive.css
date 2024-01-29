@@ -66,8 +66,16 @@
         justify-content: center;
     }
     #contact-detail li {
-        width: 33%;
+        margin: 0px 6px;
+        margin-bottom: 6px;
+        width: 30%;
     }
+
+    #contact-detail li:hover {
+        width: 36%;
+        transition: all 0.5s ease;
+    }
+    
 
     #education > div > p:nth-child(1) {
         width: 8%;
@@ -136,8 +144,16 @@
         justify-content: center;
     }
     #contact-detail li {
-        width: 33%;
+        margin: 0px 6px;
+        margin-bottom: 6px;
+        width: 30%;
     }
+
+    #contact-detail li:hover {
+        width: 36%;
+        transition: all 0.5s ease;
+    }
+    
 
     #objective p:nth-child(2) {
         font-size: 17px;
@@ -244,7 +260,14 @@
         justify-content: center;
     }
     #contact-detail li {
-        width: 33%;
+        margin: 0px 6px;
+        margin-bottom: 6px;
+        width: 30%;
+    }
+
+    #contact-detail li:hover {
+        width: 36%;
+        transition: all 0.5s ease;
     }
 
     #objective p:nth-child(2) {
@@ -396,7 +419,13 @@
         justify-content: center;
     }
     #contact-detail li {
-        width: 33%;
+        margin: 0px 6px;
+        margin-bottom: 6px;
+        width: 26%;
+    }
+    #contact-detail li:hover {
+        width: 36%;
+        transition: all 0.5s ease;
     }
 
     #objective p:nth-child(2) {
