@@ -1,26 +1,27 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
+
 a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 body {
 	padding: 30px 60px;
-	padding-bottom: 0px; 
+	padding-bottom: 0px;
 	background-image: url('img/background.png');
 	background-repeat: repeat;
-	background-size: contain; 
+	background-size: contain;
 }
 
 html {

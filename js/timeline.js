@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var timelines = document.querySelectorAll('.cd-horizontal-timeline');
     var eventsMinDistance = 60;
 
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function initTimeline(timelines) {
-        timelines.forEach(function(timeline) {
+        timelines.forEach(function (timeline) {
             var timelineComponents = {};
 
             timelineComponents['timelineWrapper'] = timeline.querySelector('.events-wrapper');
@@ -23,20 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
             var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
             timeline.classList.add('loaded');
 
-            timelineComponents['timelineNavigation'].querySelector('.next').addEventListener('click', function(event) {
+            timelineComponents['timelineNavigation'].querySelector('.next').addEventListener('click', function (event) {
                 event.preventDefault();
                 updateSlide(timelineComponents, timelineTotWidth, 'next');
             });
 
-            timelineComponents['timelineNavigation'].querySelector('.prev').addEventListener('click', function(event) {
+            timelineComponents['timelineNavigation'].querySelector('.prev').addEventListener('click', function (event) {
                 event.preventDefault();
                 updateSlide(timelineComponents, timelineTotWidth, 'prev');
             });
 
-            timelineComponents['eventsWrapper'].addEventListener('click', function(event) {
+            timelineComponents['eventsWrapper'].addEventListener('click', function (event) {
                 if (event.target.tagName === 'A') {
                     event.preventDefault();
-                    timelineComponents['timelineEvents'].forEach(function(eventItem) {
+                    timelineComponents['timelineEvents'].forEach(function (eventItem) {
                         eventItem.classList.remove('selected');
                     });
                     event.target.classList.add('selected');
@@ -46,17 +46,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            timelineComponents['eventsContent'].addEventListener('swipeleft', function() {
+            timelineComponents['eventsContent'].addEventListener('swipeleft', function () {
                 var mq = checkMQ();
                 (mq === 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'next');
             });
 
-            timelineComponents['eventsContent'].addEventListener('swiperight', function() {
+            timelineComponents['eventsContent'].addEventListener('swiperight', function () {
                 var mq = checkMQ();
                 (mq === 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'prev');
             });
 
-            document.addEventListener('keyup', function(event) {
+            document.addEventListener('keyup', function (event) {
                 if (event.which === 37 && elementInViewport(timeline)) {
                     showNewContent(timelineComponents, timelineTotWidth, 'prev');
                 } else if (event.which === 39 && elementInViewport(timeline)) {
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedContent.setAttribute('class', classEntering);
         visibleContent.setAttribute('class', classLeaving);
 
-        visibleContent.addEventListener('webkitAnimationEnd', function() {
+        visibleContent.addEventListener('webkitAnimationEnd', function () {
             visibleContent.classList.remove('leave-right', 'leave-left');
             selectedContent.classList.remove('enter-left', 'enter-right');
         });
@@ -176,17 +176,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateOlderEvents(event) {
         var eventParent = event.parentElement;
-        eventParent.querySelectorAll('li').forEach(function(li) {
+        eventParent.querySelectorAll('li').forEach(function (li) {
             var link = li.querySelector('a');
             link.classList.remove('older-event');
         });
 
-        eventParent.previousElementSibling.querySelectorAll('li').forEach(function(li) {
+        eventParent.previousElementSibling.querySelectorAll('li').forEach(function (li) {
             var link = li.querySelector('a');
             link.classList.add('older-event');
         });
 
-        eventParent.nextElementSibling.querySelectorAll('li').forEach(function(li) {
+        eventParent.nextElementSibling.querySelectorAll('li').forEach(function (li) {
             var link = li.querySelector('a');
             link.classList.remove('older-event');
         });
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function parseDate(events) {
         var dateArrays = [];
-        events.forEach(function(event) {
+        events.forEach(function (event) {
             var dateComp = event.dataset.date.split('/');
             var newDate = new Date(dateComp[2], dateComp[1] - 1, dateComp[0]);
             dateArrays.push(newDate);
